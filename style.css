@@ -1,1 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
 
+h1 {
+    color: #0056b3;
+    text-align: center;
+}
+
+p {
+    font-size: 1.1em;
+    text-align: center;
+}
+
+#saida {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    font-weight: bold;
+}
