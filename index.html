@@ -1,21 +1,132 @@
-
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de Variáveis - Cantina</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>Bem-vindo à Cantina da Escola!</h1>
-    
-    <div class="resultados">
-        <p>Temos <span id="quantidadeSalgados">20</span> salgados disponíveis.</p>
-        <p>Cada salgado custa R$<span id="precoSalgado">5</span>.</p>
-        <p>A cantina vendeu R$<span id="totalVendido">25</span> até agora.</p>
+<!doctype html>
+<html lang="pt-BR" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emanuelle Martins - Currículo</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+ </head>
+ <body class="h-full">
+  <div id="app" class="h-full w-full overflow-auto" style="background: linear-gradient(160deg, #1a1025 0%, #2d1b47 50%, #1a1025 100%);">
+   <!-- Navigation -->
+   <nav class="sticky top-0 z-50 backdrop-blur-md bg-[#1a1025]/80 border-b border-purple-900/30">
+    <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-center">
+     <div class="flex gap-6">
+      <button class="tab-btn active text-sm font-medium text-gray-300" data-tab="perfil">Perfil</button> 
+      <button class="tab-btn text-sm font-medium text-gray-300" data-tab="formacao">Formação</button> 
+      <button class="tab-btn text-sm font-medium text-gray-300" data-tab="eu">Eu</button>
+     </div>
     </div>
-    
-    <script src="script.js"></script>
-</body>
+   </nav>
+
+   <!-- Tab: Perfil -->
+   <section id="tab-perfil" class="tab-content fade-in max-w-4xl mx-auto px-6 py-10">
+    <div class="text-center mb-8">
+     <div class="photo-placeholder mx-auto mb-6" id="mainPhoto">
+      <input type="file" accept="image/*" class="hidden" id="photoInput"> 
+      <i data-lucide="camera" class="w-8 h-8 text-purple-400"></i>
+     </div>
+     <h1 class="text-3xl md:text-4xl font-bold text-white mb-2">Emanuelle Martins de Arruda</h1>
+     <p class="text-purple-300/70 mono text-sm typing-cursor">Aprendiz em Tecnologia</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+     <div class="card-glow bg-[#2a1f3d] rounded-xl p-5 border border-purple-900/30">
+      <div class="flex items-center gap-3 mb-2">
+       <i data-lucide="calendar" class="w-5 h-5 text-purple-400"></i> <span class="text-gray-400 text-sm">Nascimento</span>
+      </div>
+      <p class="text-white font-medium">04/11/2008 — 17 anos</p>
+     </div>
+     <div class="card-glow bg-[#2a1f3d] rounded-xl p-5 border border-purple-900/30">
+      <div class="flex items-center gap-3 mb-2">
+       <i data-lucide="map-pin" class="w-5 h-5 text-purple-400"></i> <span class="text-gray-400 text-sm">Endereço</span>
+      </div>
+      <p class="text-white font-medium text-sm">Av. das Nações, 31 - Estação, Araucária - PR</p>
+     </div>
+     <div class="card-glow bg-[#2a1f3d] rounded-xl p-5 border border-purple-900/30">
+      <div class="flex items-center gap-3 mb-2">
+       <i data-lucide="phone" class="w-5 h-5 text-purple-400"></i> <span class="text-gray-400 text-sm">Telefone</span>
+      </div>
+      <p class="text-white font-medium">+55 41 9 9636-6813</p>
+     </div>
+     <div class="card-glow bg-[#2a1f3d] rounded-xl p-5 border border-purple-900/30">
+      <div class="flex items-center gap-3 mb-2">
+       <i data-lucide="mail" class="w-5 h-5 text-purple-400"></i> <span class="text-gray-400 text-sm">Email</span>
+      </div>
+      <p class="text-white font-medium text-sm">manucordeiro326@gmail.com</p>
+     </div>
+    </div>
+   </section>
+
+   <!-- Tab: Formação -->
+   <section id="tab-formacao" class="tab-content fade-in max-w-4xl mx-auto px-6 py-10 hidden">
+    <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3"><i data-lucide="graduation-cap" class="w-7 h-7 text-purple-400"></i> Formação Acadêmica</h2>
+    <div class="space-y-6 mb-12">
+     <div class="card-glow bg-[#2a1f3d] rounded-xl p-6 border border-purple-900/30 relative overflow-hidden">
+      <div class="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-purple-500 to-violet-700"></div>
+      <div class="pl-4">
+       <div class="badge mb-3">📚 Cursando</div>
+       <h3 class="text-white font-semibold text-lg mb-1">3º Ano - Ensino Médio Técnico</h3>
+       <p class="text-purple-200/70 text-sm">Análise e Desenvolvimento de Sistemas (Integrado)</p>
+       <p class="text-gray-400 text-sm mt-2 flex items-center gap-2"><i data-lucide="building" class="w-4 h-4"></i> Colégio Estadual Professor Júlio Szymanski</p>
+      </div>
+     </div>
+     <div class="card-glow bg-[#2a1f3d] rounded-xl p-6 border border-purple-900/30 relative overflow-hidden">
+      <div class="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-purple-500 to-violet-700"></div>
+      <div class="pl-4">
+       <div class="badge mb-3">✅ Concluído</div>
+       <h3 class="text-white font-semibold text-lg mb-1">Informática Básica</h3>
+       <p class="text-purple-200/70 text-sm">Carga horária: 96h</p>
+       <p class="text-gray-400 text-sm mt-2 flex items-center gap-2"><i data-lucide="building" class="w-4 h-4"></i> Senac</p>
+      </div>
+     </div>
+    </div>
+    <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3"><i data-lucide="trophy" class="w-7 h-7 text-yellow-400 trophy-bounce"></i> Experiências Acadêmicas</h2>
+    <div class="space-y-4">
+     <div class="card-glow bg-[#2a1f3d] rounded-xl p-6 border border-yellow-900/30 relative">
+      <div class="flex items-start gap-4">
+       <span class="text-3xl">🥇</span>
+       <div>
+        <h3 class="text-white font-semibold">1º Lugar — Hackathon</h3>
+        <p class="text-purple-200/70 text-sm mt-1">Tema: Agronegócio e Pequenas Empresas</p>
+       </div>
+      </div>
+     </div>
+     <div class="card-glow bg-[#2a1f3d] rounded-xl p-6 border border-yellow-900/30 relative">
+      <div class="flex items-start gap-4">
+       <span class="text-3xl">🥇</span>
+       <div>
+        <h3 class="text-white font-semibold">1º Lugar — Hackathon</h3>
+        <p class="text-purple-200/70 text-sm mt-1">Tema: Indústria</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+
+   <!-- Tab: Eu -->
+   <section id="tab-eu" class="tab-content fade-in max-w-4xl mx-auto px-6 py-10 hidden">
+    <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3"><i data-lucide="sparkles" class="w-7 h-7 text-purple-400"></i> Sobre Mim</h2>
+    <div class="card-glow bg-[#2a1f3d] rounded-xl p-6 border border-purple-900/30 mb-8">
+     <p id="aboutText" class="text-purple-100/80 leading-relaxed text-sm">Clique aqui para editar e contar um pouco sobre você! 💜</p>
+     <textarea id="aboutTextarea" class="hidden w-full bg-transparent text-purple-100/80 leading-relaxed text-sm border border-purple-700 rounded-lg p-3 mt-2 focus:outline-none focus:border-purple-400 resize-y min-h-[120px]" placeholder="Escreva sobre você..."></textarea>
+    </div>
+    <h3 class="text-xl font-semibold text-white mb-4">Minhas Fotos</h3>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+     <div class="gallery-slot" data-slot="0"><i data-lucide="plus" class="w-6 h-6 text-purple-400"></i></div>
+     <div class="gallery-slot" data-slot="1"><i data-lucide="plus" class="w-6 h-6 text-purple-400"></i></div>
+     <div class="gallery-slot" data-slot="2"><i data-lucide="plus" class="w-6 h-6 text-purple-400"></i></div>
+     <div class="gallery-slot" data-slot="3"><i data-lucide="plus" class="w-6 h-6 text-purple-400"></i></div>
+     <div class="gallery-slot" data-slot="4"><i data-lucide="plus" class="w-6 h-6 text-purple-400"></i></div>
+     <div class="gallery-slot" data-slot="5"><i data-lucide="plus" class="w-6 h-6 text-purple-400"></i></div>
+    </div>
+    <input type="file" accept="image/*" class="hidden" id="galleryInput">
+   </section>
+  </div>
+
+  <script src="script.js"></script>
+ </body>
 </html>
