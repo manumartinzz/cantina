@@ -1,104 +1,25 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emanuelle Martins de Arruda</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/lucide@latest"></script>
-</head>
-<body>
-    <div class="container">
-        <!-- Cabeçalho / Perfil -->
-        <div class="profile-header">
-            <div id="mainPhoto" class="photo-placeholder">
-                <img src="fotodeperfil.jpg" alt="Emanuelle Martins de Arruda" id="mainPhotoImg">
-            </div>
-            
-            <h1>Emanuelle Martins de Arruda</h1>
-            <p class="subtitle">Aprendiz em Tecnologia</p>
-            
-            <div class="info-grid">
-                <div class="info-item">
-                    <strong>Nascimento</strong><br>
-                    04/11/2008 — 17 anos
-                </div>
-                <div class="info-item">
-                    <strong>Endereço</strong><br>
-                    Av. das Nações, 31 - Estação, Araucária - PR
-                </div>
-                <div class="info-item">
-                    <strong>Telefone</strong><br>
-                    +55 41 9 9636-6813
-                </div>
-                <div class="info-item">
-                    <strong>Email</strong><br>
-                    manucordeiro326@gmail.com
-                </div>
-            </div>
-        </div>
+   <div class="card-glow bg-[#2a1f3d] rounded-xl p-6 border border-purple-900/30 mb-8">
+     <p id="aboutText" class="text-purple-100/80 leading-relaxed text-sm"> Olá! Sou Emanuelle Martins de Arruda, tenho 17 anos e estou no 3º ano do Ensino Médio Técnico em Análise e Desenvolvimento de Sistemas. Tenho grande interesse em transformar ideias em soluções reais através da tecnologia e da criatividade.
 
-        <!-- Navegação por Abas -->
-        <div class="tabs">
-            <button class="tab-btn active" data-tab="perfil">Perfil</button>
-            <button class="tab-btn" data-tab="formacao">Formação</button>
-            <button class="tab-btn" data-tab="experiencias">Experiências</button>
-            <button class="tab-btn" data-tab="sobre">Sobre Mim</button>
-        </div>
+Tenho experiência prática em hackathons, nos quais conquistei o 1º lugar em dois desafios de grande relevância: um focado em Agronegócio e Pequenas Empresas, e outro na área da Indústria. Esses projetos foram promovidos pela Secretaria de Ciência, Inovação e Tecnologia de Araucária em parceria com a Universidade Federal do Paraná (UFPR). Para superar esses desafios e desenvolver soluções inovadoras, foi essencial aplicar habilidades como comunicação assertiva, trabalho em equipe, resiliência e pensamento criativo.
+Tenho experiência prática em hackathons, nos quais conquistei o 1º lugar em dois desafios de grande relevância: um focado em Agronegócio e Pequenas Empresas, e outro na área da Indústria. Esses projetos foram promovidos pela Secretaria Municipal de Ciência, Inovação, Tecnologia e Desenvolvimento Econômico (SMCIT) de Araucária em parceria com a Universidade Federal do Paraná (UFPR). Para superar esses desafios e desenvolver soluções inovadoras, foi essencial aplicar habilidades como comunicação assertiva, trabalho em equipe, resiliência e pensamento criativo.
 
-        <!-- Conteúdo das Abas -->
-        <div id="tab-perfil" class="tab-content">
-            <!-- Conteúdo do Perfil (se tiver mais coisas) -->
-        </div>
-
-        <div id="tab-formacao" class="tab-content">
-            <h2>Formação Acadêmica</h2>
-            <div class="card-glow">
-                <strong>📚 Cursando</strong><br>
-                3º Ano - Ensino Médio Técnico<br>
-                Análise e Desenvolvimento de Sistemas (Integrado)<br>
-                Colégio Estadual Professor Júlio Szymanski
-            </div>
-            <div class="card-glow">
-                <strong>✅ Concluído</strong><br>
-                Informática Básica<br>
-                Carga horária: 96h<br>
-                Senac
-            </div>
-        </div>
-
-        <div id="tab-experiencias" class="tab-content">
-            <h2>Experiências Acadêmicas</h2>
-            <div class="card-glow">
-                🥇 1º Lugar — Hackathon<br>
-                Tema: Agronegócio e Pequenas Empresas
-            </div>
-            <div class="card-glow">
-                🥇 1º Lugar — Hackathon<br>
-                Tema: Indústria
-            </div>
-        </div>
-
-        <div id="tab-sobre" class="tab-content">
-            <h2>Sobre Mim</h2>
-            <p id="aboutText">
-                Olá! Sou Emanuelle Martins de Arruda, tenho 17 anos e estou no 3º ano do Ensino Médio Técnico em Análise e Desenvolvimento de Sistemas. Tenho grande interesse em transformar ideias em soluções reais através da tecnologia e da criatividade.
-            </p>
-            <textarea id="aboutTextarea" class="hidden"></textarea>
-
-            <h3>Minhas Fotos</h3>
-            <div class="gallery">
-                <div class="gallery-slot" id="gallery1"></div>
-                <div class="gallery-slot" id="gallery2"></div>
-                <div class="gallery-slot" id="gallery3"></div>
-            </div>
-        </div>
+Busco minha primeira oportunidade como Jovem Aprendiz na Bosch para colocar em prática meu aprendizado técnico, crescer profissionalmente e contribuir com energia, dedicação e sede de aprender. Sou proativa, comunicativa e estou sempre pronta para enfrentar novos desafios.</p>
+     <textarea id="aboutTextarea" class="hidden w-full bg-transparent text-purple-100/80 leading-relaxed text-sm border border-purple-700 rounded-lg p-3 mt-2 focus:outline-none focus:border-purple-400 resize-y min-h-[120px]" placeholder="Escreva sobre você..."></textarea>
     </div>
+    <h3 class="text-xl font-semibold text-white mb-4">Minhas Fotos</h3>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+     <div class="gallery-slot" data-slot="0"><i data-lucide="plus" class="w-6 h-6 text-purple-400"></i></div>
+     <div class="gallery-slot" data-slot="1"><i data-lucide="plus" class="w-6 h-6 text-purple-400"></i></div>
+     <div class="gallery-slot" data-slot="2"><i data-lucide="plus" class="w-6 h-6 text-purple-400"></i></div>
+     <div class="gallery-slot" data-slot="3"><i data-lucide="plus" class="w-6 h-6 text-purple-400"></i></div>
+     <div class="gallery-slot" data-slot="4"><i data-lucide="plus" class="w-6 h-6 text-purple-400"></i></div>
+     <div class="gallery-slot" data-slot="5"><i data-lucide="plus" class="w-6 h-6 text-purple-400"></i></div>
+    </div>
+    <input type="file" accept="image/*" class="hidden" id="galleryInput">
+   </section>
+  </div>
 
-    <!-- Input oculto para upload -->
-    <input type="file" id="photoInput" accept="image/*" style="display: none;">
-    <input type="file" id="galleryInput" accept="image/*" style="display: none;">
-
-    <script src="script.js"></script>
-</body>
+  <script src="script.js"></script>
+ </body>
 </html>
